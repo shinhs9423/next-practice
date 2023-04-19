@@ -36,3 +36,54 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## My study note
+
+### create-project
+```bash
+create-next-app
+```
+
+- use 'create-next-app ${app-name}' command
+- It is auto install WebPack  & babel
+- It can perform compilation and bundling
+
+### default folder structure
+- folder structure
+
+| path   | description                                           |    
+|:-------|:------------------------------------------------------|
+| pages  | route pages                                           |
+| public | static files                                          |
+| styles | stylesheets                                           |
+| src    | * not default <br> component & container and so on... |
+
+### default files
+- default files description
+
+| path               | description                                                                                                                                                                                         |    
+|:-------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| pages/_app.js      | - when move to page can maintain the layout and state <br> - componentDidCatch can be used for custom error handling <br> - data can be injected into the page <br> - global styles can be declared |
+| pages/index.js     | - index page                                                                                                                                                                                        |
+| pages/_document.js | - ...                                                                                                                                                                                               |
+
+
+### What Next.js supports
+1. auto refresh to browser
+    - if you did edit Source
+    - Browser is auto refresh HTML
+2. Next.js supports Server Side Rendering
+    - Server Side Rendering (SSR) is a technique used to improve the initial loading speed of web applications
+3. Next.js supports Static files
+    - if you want to use static files, create files inside the public folder
+    - The files inside the public folder can be accessed directly through URL paths
+    - The files inside the public folder use for client and server
+
+### route of Next.js
+- Route of Next.js is create .js file or directory inside the pages folder
+
+1. files
+    - pages/example.js
+
+2. folders
+    - pages/example/[product].js
