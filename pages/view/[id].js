@@ -7,9 +7,7 @@
 function View() {
   return (
     <>
-      <div>
-        View
-      </div>
+      <div>View</div>
     </>
   );
 }
